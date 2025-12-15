@@ -27,8 +27,8 @@ public class Serie {
     private String descricao;
     private String atores;
     private String poster;
-    //a anotação abaixo define que esse atributo não vai ser usado lido ainda pelo jpa
-    @Transient
+
+    @OneToMany(mappedBy = "serie")
     List<Episodio> episodios = new ArrayList<>();
 
     public Serie(DadosSerie dadosSerie) {

@@ -138,14 +138,10 @@ public class Menu {
         System.out.println(ANSI_YELLOW + "\n--- SÉRIES BUSCADAS ---" + ANSI_RESET);
 
         if (dadosSeries.isEmpty()) {
-            System.out.println("\né papai");
+            System.out.println("\nA Lista Esta Vazia!");
         }
 
-        List<Serie> series;
-
-        series = dadosSeries.stream()
-                .map(s -> new Serie(s))
-                .collect(Collectors.toList());
+        List<Serie> series = repositorio.findAll();
         series.stream()
                 .sorted(Comparator.comparing(Serie::getCategoria))
                 .forEach(System.out::println);

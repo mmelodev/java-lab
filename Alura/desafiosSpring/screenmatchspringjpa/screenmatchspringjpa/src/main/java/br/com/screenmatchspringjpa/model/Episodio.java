@@ -1,13 +1,24 @@
 package br.com.screenmatchspringjpa.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+
+@Entity
+@Table(name = "episodios")
 public class Episodio {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private Integer numeroTemporada;
 	private String tituloEpisodio;
 	private Integer numeroEpisodio;
 	private Double avaliacaoEpisodio;
 	private LocalDate dataDeLancamento;
+
+	@ManyToOne
+	private Serie serie;
 
 	public Episodio(Integer numeroTemporada, DadosEpisodio dadosEpisodio) {
 		this.numeroTemporada = numeroTemporada;
@@ -25,6 +36,10 @@ public class Episodio {
 		} catch (Exception ex) {
 			this.dataDeLancamento = null;
 		}
+
+	}
+
+	public Episodio() {
 
 	}
 
