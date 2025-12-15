@@ -1,0 +1,10 @@
+package Alura;
+
+public class ExeAlura01 {
+
+	public static void maincalculo(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,26 @@
+# Documentação do Projeto AriranG
+
+## Visão Geral
+O projeto AriranG é um sistema de gestão escolar desenvolvido com Spring Boot, integrando uma API REST para gerenciamento de alunos. Iniciado em junho de 2025, o objetivo é criar uma solução escalável para administração escolar.
+
+## Progresso
+
+### Quinta-feira, Semana 3 (15 de julho de 2025)
+- **Endpoints Implementados e Testados**:
+  - **POST /alunos**: Cadastra um novo aluno.  
+    - Requisição: `{"nomeCompleto": "Ana Beatriz", "email": "ana.b@email.com", "cpf": "111.222.333-44", "dataNascimento": "2005-10-15"}`  
+    - Resposta: 201 Created com o aluno salvo.  
+  - **GET /alunos**: Lista todos os alunos.  
+    - Resposta: 200 OK com array de alunos.  
+  - **GET /alunos/{id}**: Busca um aluno por ID.  
+    - Resposta: 200 OK com dados do aluno ou 404 Not Found.  
+- **Resultados**:
+  - Total de alunos cadastrados: [insira o número, ex.: 3].
+  - IDs testados: [liste, ex.: 1, 2, 3].
+  - Observações: Todos os testes foram bem-sucedidos, sem erros reportados.
+- **Tecnologias**:
+  - Spring Boot 3.2.5
+  - Hibernate 6.4.4.Final
+  - MySQL
+- **Próximos Passos**:
+  - Sexta-feira, Semana 3: Testes exaustivos dos endpoints e implementação de `UPDATE` e `DELETE`.

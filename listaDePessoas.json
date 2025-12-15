@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Murilo",
+    "profissao": "Desenvolvedor",
+    "cep": "66110-053",
+    "logradouro": "Rua Doze",
+    "cidade": "Belém",
+    "estado": "Pará",
+    "ddd": "91"
+  },
+  {
+    "nome": "Lucas",
+    "profissao": "Jardineiro",
+    "cep": "66640-755",
+    "logradouro": "Rodovia Transcoqueiro",
+    "cidade": "Belém",
+    "estado": "Pará",
+    "ddd": "91"
+  }
+]

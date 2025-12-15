@@ -1,0 +1,22 @@
+# Documentação do Projeto AriranG - Quinta-feira, Semana 3
+
+## Endpoints Testados
+
+- **POST /alunos**
+  - Descrição: Cadastra um novo aluno.
+  - Requisição: `{"nomeCompleto": "Ana Beatriz", "email": "ana.b@email.com", "cpf": "111.222.333-44", "dataNascimento": "2005-10-15"}`
+  - Resposta: 201 Created com o aluno salvo.
+- **GET /alunos**
+  - Descrição: Lista todos os alunos.
+  - Resposta: 200 OK com array de alunos.
+- **GET /alunos/{id}**
+  - Descrição: Busca um aluno por ID.
+  - Resposta: 200 OK com dados do aluno ou 404 Not Found.
+
+## Resultados
+- Total de alunos cadastrados: [insira o número].
+- IDs testados: [liste os IDs, ex.: 1, 2, 3].
+- Observações: [anote qualquer comportamento inesperado].
+
+## Próximos Passos
+- Sexta-feira: Testes exaustivos e início do CRUD completo.

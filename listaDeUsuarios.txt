@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Murilo Melo",
+    "nomeLogin": "mmelodev",
+    "localizacao": "Belém, Pará - Brazil",
+    "bio": "☕ | the magic of representing things with bits",
+    "seguidores": "9"
+  },
+  {
+    "nome": "Filipe Deschamps",
+    "nomeLogin": "filipedeschamps",
+    "localizacao": "Brasil",
+    "bio": "Quer se sentir competente em programação? Confere isso: https://curso.dev",
+    "seguidores": "37210"
+  }
+]

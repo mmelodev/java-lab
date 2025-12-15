@@ -1,0 +1,1 @@
+-> Esse projeto tem o objetivo de criar a compreensão completa sobre orientação a objetos em Java. Compreendendo todo o sistema por trás dos obejetos em java.
