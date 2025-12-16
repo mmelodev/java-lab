@@ -28,7 +28,7 @@ public class Serie {
     private String atores;
     private String poster;
 
-    @OneToMany(mappedBy = "serie")
+    @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER) //para que ao atualizar dar update na série os episodios também sejam adicionados no banco
     List<Episodio> episodios = new ArrayList<>();
 
     public Serie(DadosSerie dadosSerie) {
@@ -50,6 +50,7 @@ public class Serie {
     }
 
     public void setEpisodios(List<Episodio> episodios) {
+        episodios.forEach(e -> e.setSerie(this));
         this.episodios = episodios;
     }
 
@@ -125,6 +126,7 @@ public class Serie {
                 "Atores: " + atores + "\n" +
                 "Avaliação: " + avaliacaoImdb + "\n" +
                 "Nº Temporadas: " + totalTemporada + "\n" +
+                "Episodios: " + episodios + "\n" +
                 "Poster: " + poster + "\n";
     }
 }
