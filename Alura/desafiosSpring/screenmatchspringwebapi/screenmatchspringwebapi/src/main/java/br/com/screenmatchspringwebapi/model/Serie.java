@@ -22,7 +22,7 @@ public class Serie {
     @Enumerated(EnumType.STRING)
     private Categoria categoria;
     //esse enumerated vai ajudar a não criar inconsistencias na hora de ordenar as categorias, existem outras maneiras de usar esse enumerated
-    @Column(length = 500)
+    @Column(length = 8000)
     private String descricao;
     private String atores;
     private String poster;

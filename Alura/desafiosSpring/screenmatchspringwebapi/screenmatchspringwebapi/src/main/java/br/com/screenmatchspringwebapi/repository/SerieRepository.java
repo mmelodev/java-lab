@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Optional;
 
 public interface SerieRepository extends JpaRepository<Serie, Long>{
-    //Tarefa: Estudar mais a fundo sobre devired queries e funcionalidade
 
     Optional<Serie> findByTituloContainingIgnoreCase(String nomeSerie);
 
@@ -37,4 +36,7 @@ public interface SerieRepository extends JpaRepository<Serie, Long>{
 
     @Query("SELECT e FROM Serie s JOIN s.episodios e WHERE s = :serie AND YEAR(e.dataDeLancamento) >= :anoLancamento")
     List<Episodio> consultaEpisodiosPorSerieEData(Serie serie, int anoLancamento);
+
+    @Query("SELECT s FROM Serie s JOIN s.episodios e GROUP BY s ORDER BY MAX(e.dataDeLancamento) DESC LIMIT 5")
+    List<Serie> listarLancamentos();
 }
