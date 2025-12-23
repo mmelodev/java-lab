@@ -2,6 +2,7 @@ package br.com.screenmatchspringwebapi.services;
 
 import br.com.screenmatchspringwebapi.dto.EpisodioDTO;
 import br.com.screenmatchspringwebapi.dto.SerieDTO;
+import br.com.screenmatchspringwebapi.model.Categoria;
 import br.com.screenmatchspringwebapi.model.Serie;
 import br.com.screenmatchspringwebapi.repository.SerieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,5 +59,16 @@ public class SerieService {
         }
 
         return null;
+    }
+
+    public List<EpisodioDTO> obterTemporadaPorNumero(Long id, Long numero) {
+        return repositorio.temporadaPorNumero(id, numero).stream()
+                .map(e -> new EpisodioDTO(e.getNumeroTemporada(), e.getNumeroEpisodio(), e.getTituloEpisodio()))
+                .collect(Collectors.toList());
+    }
+
+    public List<SerieDTO> obterSeriesPorCategoria(String categoriaSelecionada) {
+        Categoria categoria = Categoria.fromPortugues(categoriaSelecionada);
+        return converteDados(repositorio.findByCategoria(categoria));
     }
 }

@@ -2,6 +2,7 @@ package br.com.screenmatchspringwebapi.controller;
 
 import br.com.screenmatchspringwebapi.dto.EpisodioDTO;
 import br.com.screenmatchspringwebapi.dto.SerieDTO;
+import br.com.screenmatchspringwebapi.model.Categoria;
 import br.com.screenmatchspringwebapi.model.Serie;
 import br.com.screenmatchspringwebapi.repository.SerieRepository;
 import br.com.screenmatchspringwebapi.services.SerieService;
@@ -49,5 +50,15 @@ public class SerieController {
     @GetMapping("/{id}/temporadas/todas")
     public List<EpisodioDTO> obterTodasTemporadas(@PathVariable Long id){
         return serieService.obterTodasTemporadas(id);
+    }
+
+    @GetMapping ("/{id}/temporadas/{numero}")
+    public List<EpisodioDTO> obterTemporadaPorNumero (@PathVariable Long id, @PathVariable Long numero){
+        return serieService.obterTemporadaPorNumero(id, numero);
+    }
+
+    @GetMapping("/categoria/{categoriaSelecionada}")
+    public List<SerieDTO> obterSeriesPorCategoria (@PathVariable String categoriaSelecionada){
+        return serieService.obterSeriesPorCategoria(categoriaSelecionada);
     }
 }
