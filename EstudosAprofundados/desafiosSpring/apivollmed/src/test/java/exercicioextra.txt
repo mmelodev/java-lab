@@ -1,0 +1,1 @@
+1 - Crie os testes automatizados para o método cadastrar da classe MedicoController.

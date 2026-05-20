@@ -1,0 +1,73 @@
+Aqui está a transcrição organizada em um **checklist estilizado**, deixando claro o fluxo do desafio:
+
+---
+
+### ✅ **Checklist do Desafio – Aplicação de Compras**
+
+* [✅ ] **Definir limite do cartão de crédito**
+
+  * Perguntar: *"Digite o limite do cartão"*
+  * Exemplo: `1000`
+
+* [ ✅] **Criar menu de lançamento de compras**
+
+  * Perguntar: *"Digite a descrição da compra"*
+  * Perguntar: *"Digite o valor da compra"*
+  * Validar:
+
+    * Se o valor **≤ saldo disponível** → *Compra realizada!*
+    * Se o valor **> saldo disponível** → *Saldo insuficiente!*
+
+* [✅ ] **Controle de repetição (loop de compras)**
+
+  * Exibir: *"Digite 0 para sair ou 1 para continuar"*
+  * Se `1` → continuar lançando novas compras
+  * Se `0` → encerrar programa
+
+* [ ✅] **Exibir relatório final das compras realizadas**
+
+  * Mostrar todas as compras feitas
+  * Calcular saldo restante do cartão
+  * Ordenar compras por **valor crescente** (não pela ordem de entrada)
+
+* [ ✅] **Exemplo de execução – limite ultrapassado**
+
+  * Entrada:
+
+    * `sapato – 150` (saldo atualizado: 850)
+    * `armários – 900` (saldo insuficiente)
+  * Saída:
+
+    ```
+    COMPRAS REALIZADAS:
+    sapato - 150.0
+    Saldo do cartão: 850.0
+    ```
+
+* [ ✅] **Exemplo de execução – compras ordenadas por valor**
+
+  * Entrada:
+
+    * `sapato – 50`
+    * `camisa – 15`
+    * `calça – 30`
+  * Saída:
+
+    ```
+    COMPRAS REALIZADAS:
+    camisa - 15.0
+    calça - 30.0
+    sapato - 50.0
+    Saldo do cartão: 905.0
+    ```
+
+---
+
+🔑 **Objetivos principais:**
+
+* Criar **aplicação para lançamento de compras com cartão**.
+* Implementar **menu interativo** para registrar compras.
+* **Armazenar em lista** todas as compras.
+* **Ordenar e exibir** a lista por valor ao encerrar.
+
+---

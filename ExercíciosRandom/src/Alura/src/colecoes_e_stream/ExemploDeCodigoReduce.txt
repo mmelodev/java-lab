@@ -1,0 +1,8 @@
+// Para uma Stream de Double
+Stream<Double> valores = Stream.of(100.0, 200.0, 300.0);
+
+// ✅ CORRETO - usando dois parâmetros no accumulator
+Double resultado = valores.reduce(0.0, (acumulado, atual) -> acumulado + (atual * 0.08));
+
+// Ou de forma mais clara:
+Double resultado = valores.reduce(0.0, (soma, valor) -> soma + (valor * 0.08));

@@ -1,0 +1,69 @@
+1)
+
+Roberto está desenvolvendo um sistema de relatórios financeiros e precisa formatar valores monetários com duas casas decimais. Construa um programa que receba um valor monetário e exiba o valor formatado com duas casas decimais.
+
+Exemplo de Entrada:
+
+Digite o valor: 19,9876
+
+Saída esperada:
+
+Valor formatado: R$ 19,99
+
+-----------------------------
+
+2)
+
+Pedro está desenvolvendo um sistema de controle de produtos e precisa verificar se os códigos de referência dos produtos seguem o formato correto. O formato do código de referência é composto por:
+
+    3 letras maiúsculas
+    Um hífen
+    4 dígitos numéricos Crie um programa que receba um código de referência e informe se ele está no formato correto.
+
+Exemplo de entrada:
+
+Digite o código de referência: ABC-1234
+
+Saída esperada:
+
+O código de referência está válido.
+
+-----------------------------
+
+3)
+
+Patrícia está desenvolvendo um sistema de análise de redes sociais e precisa extrair todas as hashtags de um texto. Ela quer um programa que encontre todas as palavras que começam com "#".
+
+Crie um programa que receba um texto e exiba todas as hashtags encontradas.
+
+Exemplo de entrada:
+
+Digite o texto: Olá #mundo! Estou aprendendo #Java e #programação.
+
+Saída esperada:
+
+Hashtags encontradas: #mundo, #Java, #programação
+
+-----------------------------
+
+4)
+
+Carla está desenvolvendo um sistema de cadastro de usuários e precisa validar as senhas. A senha deve ter pelo menos:
+
+    8 caracteres
+    Uma letra maiúscula
+    Uma letra minúscula
+    Um número
+    Um caractere especial
+
+Crie um programa que receba uma senha e exiba uma mensagem indicando se a senha é válida ou não.
+
+Exemplo de entrada:
+
+Digite a senha: Senha123!
+
+Saída esperada:
+
+A senha é válida.
+
+-----------------------------

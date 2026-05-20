@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/AritmeticaSimples/AritmeticaSimples.iml" filepath="$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/AritmeticaSimples/AritmeticaSimples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/EstruturaDeRepeticao/EstruturaDeRepeticao.iml" filepath="$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/EstruturaDeRepeticao/EstruturaDeRepeticao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/EstruturaDeSelecao/EstruturaDeSelecao.iml" filepath="$PROJECT_DIR$/Java-Exercicios_Prof_Fabio_UFRA/EstruturaDeSelecao/EstruturaDeSelecao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExercíciosRandom.iml" filepath="$PROJECT_DIR$/ExercíciosRandom.iml" />
+    </modules>
+  </component>
+</project>
