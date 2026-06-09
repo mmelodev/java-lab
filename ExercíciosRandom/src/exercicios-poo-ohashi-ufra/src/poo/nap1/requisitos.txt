@@ -1,0 +1,39 @@
+Crie	um	vídeo de	no	máximo	10	min,	enviar	apenas	o	link	do	vídeo postado	no	
+Youtube	ou	plataformas	similares.	O	vídeo deve	abordar	todos	os	itens descritos	
+e	rodar	os	códigos solicitados.
+
+1) O	 programador	 deseja	 aplicar	 polimorfismo	 dinâmico,	 está	 correto?	
+Justifique	e	se	necessário	corrija.
+
+public class Animal {
+ public void emitirSom() {
+ System.out.println("Som");
+ }
+}
+public class Cachorro extends Animal {
+ public void emitirSom(String nome) {
+ System.out.println("Au Au");
+ }
+}
+
+2) Crie	um	exemplo	de	polimorfismo	estático,	explique	o	mesmo.	
+
+3) Crie	 dentro	 do	 package	 empresa,	 a	 classe	 Funcionario	 com	 os	 atributos	
+nome	 e	 salario.	 Crie	 também	 o	 método	 calcular_salario() que	 retorna	 o	
+salario	 do	 funcionario.	 Crie também	 a	 classe	 Vendedor,	 que	 herda	 de	
+Funcionario,	 possui	 o	 atributo	 comissao	 e	 o	 método	 calcular_salario()	
+retorna	o	salario	mais	a	comissao.	Criar	o	código	e	analisar	se	a	lógica	da	
+herança	está	correta.	Criar	uma	classe	Main	que	vai	criar	um	funcionario	e	
+um	 vendedor	 e	 imprimir	 o	 resultado do	 método	 calcular_salario().
+Explique	todo	o	processo.
+
+4) Criar	 a	 interface	 Pagamento,	 como	 método:	 public	 void	
+realizarPagamento(double	 valor);.	 Criar	 as	 Classes:	 Pix,	 CartaoCredito,	
+Debito	 que	 implementam	 a	 interface	 e	 no	 método	 realizar	 pagamento	
+imprimem	a	messagem	no	seguinte	padrão:	
+
+Pagamento	de	R$	150,00	realizado	com	PIX.
+Pagamento	de	R$	150,00	realizado	com	Cartão	de	Crédito.
+
+Explicar	 por	 que	 utilizar	interface?	 Existe	 algum	 erro	 nessa	 abordagem,	
+corrija	e justifique?
