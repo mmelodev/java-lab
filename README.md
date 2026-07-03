@@ -15,7 +15,7 @@
 
 ## 🎯 Sobre
 
-Meu hub de **estudos, exercícios e projetos** desenvolvidos durante o aprendizado da linguagem Java. Aqui você encontrará desde conceitos básicos até implementações mais avançadas, organizados de forma didática.
+Hub de **estudos, exercícios e projetos** da linguagem Java. Aqui você encontrará desde conceitos básicos até implementações mais avançadas, organizados de forma didática.
 
 ## 📁 Estrutura do Repositório
 
